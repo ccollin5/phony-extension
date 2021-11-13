@@ -1,0 +1,20 @@
+{
+
+  "manifest_version": 2,
+  "name": "Phony",
+  "version": "1.0",
+  "description": "Highlights product reviews that might be phony",
+
+
+  "icons": {
+    "48": "icons/phony-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.mozilla.org/*"],
+      "js": ["phony.js"]
+    }
+  ]
+  
+}
